@@ -4,12 +4,6 @@ Spring is an enterprise Java framework that is used to develop enterprise Java a
 
 Spring Boot is based on the Spring Framework. It basically provides a way in to bootstrap or have an easy to start Spring application.
 
-## Spring Boot
-
-- Spring refers to the Java Spring framework
-- Boot refers to the ability of Spring Boot to bootstrap a Spring application
-- Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that can be **just run**
-
 ## Spring
 
 - Spring is an `application framework` used to build enterprise Java applications
@@ -19,14 +13,21 @@ Spring Boot is based on the Spring Framework. It basically provides a way in to 
 - Spring also provides `infrastructure support`
   - connect to relational/non-relational databases
   - handle HTTP calls
+- Spring uses MVC for a web application
 
-## Problems with Spring
+### Problems with Spring
 
 - Huge framework
 - Multiple setup and configuration steps
 - Multiple build and deploy steps
 
-## How does Spring Boot address the problems?
+## Spring Boot
+
+- Spring refers to the Java Spring framework
+- Boot refers to the ability of Spring Boot to bootstrap a Spring application
+- Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that can be **just run**
+
+### How does Spring Boot address the problems with Spring?
 
 - Spring Boot is opinionated
   - provides a default set of configuration as a starting point
@@ -34,3 +35,19 @@ Spring Boot is based on the Spring Framework. It basically provides a way in to 
 - Spring Boot prefers convention over configuration
 - Spring Boot applications are stand alone, ready to run
 - Spring Boot applications are production-ready
+
+### Starting Spring Boot
+
+- Sets up default configuration
+- Starts Spring application context
+- Performs class path scan
+- Starts Tomcat server
+
+## Controller
+
+- A Java class
+- Marked with annotations
+- Has info about
+  - What URL access triggers it?
+  - What method to run when accessed?
+    - `@RequestMapping` maps a function to GET requests
