@@ -66,3 +66,13 @@ Spring Boot deployable contains an embedded Tomcat server which
 
 - allows build Controllers that map requests to responses
 - automatically converts values returned from controller methods into valid JSON
+
+## Spring Data JPA
+
+- builds on Java Persistence API (JPA)
+
+### JPA
+
+- Java Persistence API
+- performs ORM
+  - maps entity classes to corresponding database structures
