@@ -33,8 +33,8 @@ public class TopicController {
     }
 
     @PutMapping("/topics/{id}")
-    public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
-        topicService.updateTopic(id, topic);
+    public void updateTopic(@RequestBody Topic topic) {
+        topicService.updateTopic(topic);
     }
 
     @DeleteMapping("/topics/{id}")
