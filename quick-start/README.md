@@ -43,11 +43,26 @@ Spring Boot is based on the Spring Framework. It basically provides a way in to 
 - Performs class path scan
 - Starts Tomcat server
 
+## Embedded Tomcat Server
+
+Spring Boot deployable contains an embedded Tomcat server which
+
+- provides convenience
+- now does servlet container config through application config
+- makes the application stand alone
+- makes this useful for microservices architecture
+
 ## Controller
 
-- A Java class
-- Marked with annotations
-- Has info about
-  - What URL access triggers it?
-  - What method to run when accessed?
-    - `@RequestMapping` maps a function to GET requests
+- a simple Java class
+- functions to map request to responses
+- marked with annotations
+- has info about
+  - what URL access triggers it?
+  - what method to run when accessed?
+    - `@GETMapping` maps a function to GET requests
+
+## Spring MVC
+
+- allows build Controllers that map requests to responses
+- automatically converts values returned from controller methods into valid JSON
