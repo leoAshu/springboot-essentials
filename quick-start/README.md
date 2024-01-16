@@ -76,3 +76,9 @@ Spring Boot deployable contains an embedded Tomcat server which
 - Java Persistence API
 - performs ORM
   - maps entity classes to corresponding database structures
+
+## Deployment
+
+- Build: `mvn clean install`
+- Run jar: `java -jar <path-to-jar>`
+- Update `pom.xml` to generate `war` instead of `jar`
