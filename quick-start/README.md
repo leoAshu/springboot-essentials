@@ -82,3 +82,9 @@ Spring Boot deployable contains an embedded Tomcat server which
 - Build: `mvn clean install`
 - Run jar: `java -jar <path-to-jar>`
 - Update `pom.xml` to generate `war` instead of `jar`
+
+> Note: Spring Boot Actuator
+>
+> - Adds some production ready features for monitoring and logging
+> - For example, adds a `health` endpoint that gives metrics about the app at the same url+port
+>   - Set `management-port` key in `application.properties` to change the port for the actuator endpoints
