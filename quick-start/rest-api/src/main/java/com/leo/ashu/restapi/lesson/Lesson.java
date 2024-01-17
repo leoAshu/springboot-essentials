@@ -21,11 +21,12 @@ public class Lesson {
 
     }
     
-    public Lesson(String id, String name, String description, String courseId, String topicId) {
+    public Lesson(String id, String name, String description, String courseId, Course course) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.course = new Course(courseId, "", "", topicId);
+        // this.course = new Course(courseId, "", "", topicId);
+        this.course = course;
     }
 
     public String getId() {
